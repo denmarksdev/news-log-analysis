@@ -1,2 +1,2 @@
-# news-log-analysis
+# News Log Analysis
 Analyze database logs with PostgreSQL and Python
