@@ -4,7 +4,7 @@ import newsdb
 def show_top_articles():
     print("searching for articles...\n")
     break_line_print()
-    results = newsdb.get_top3_articles_by_num_views()
+    results = newsdb.get_top_3_articles_by_num_views()
     print("***Top articles***")
     show_results("articles", results)
 
@@ -40,12 +40,13 @@ def break_line_print():
 def main():
     break_line_print()
     show_top_articles()
-    
+
     break_line_print()
     show_top_authors()
 
     break_line_print()
     show_errors_on_request()
     break_line_print()
+
 
 main()

@@ -15,8 +15,8 @@ def get_query_result(query):
 
 
 def get_top_3_articles_by_num_views():
-    results = get_query_result("SELECT * FROM view_top_article_by_views")
-
+    results = get_query_result("SELECT * FROM " +
+                               "view_top_article_by_views")
     articles = []
     for article, views in results:
         articles.append('%s - %s views' % (article, views,))
@@ -25,9 +25,8 @@ def get_top_3_articles_by_num_views():
 
 
 def get_top_authors_by_num_views_articles():
-    results = get_query_result(
-        "SELECT * FROM view_top_authors_by_views_article")
-
+    results = get_query_result("SELECT * FROM " +
+                               "view_top_authors_by_views_article")
     articles = []
     for author, views in results:
         articles.append('%s - %s views' % (author, views,))
@@ -36,9 +35,8 @@ def get_top_authors_by_num_views_articles():
 
 
 def get_error_request_by_day_more_than_1percent():
-    results = get_query_result(
-        "SELECT * FROM view_errors_request_by_day_more_than_1percent")
-
+    results = get_query_result("SELECT * FROM " +
+                               "view_errors_request_by_day_more_than_1percent")
     errors = []
     for date, percent in results:
         errors.append('%s - %s errors' % (date, percent,))
