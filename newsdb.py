@@ -23,7 +23,7 @@ def get_query_result(query):
 def get_top_3_articles_by_num_views():
 
     results = get_query_result('''
-    SELECT v.title, v.views 
+    SELECT v.title, v.views
     FROM view_top_article_by_views AS v
     LIMIT 3
     ''')
