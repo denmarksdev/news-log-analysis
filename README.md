@@ -8,6 +8,19 @@ Create a reporter tool to **Analysis database news**, answering the following qu
 - [Python 3.7](https://www.python.org/downloads/)
 - [PostgreSQL 9.5](https://www.postgresql.org/download/)
 
+# Virtual Machine the easy way
+
+he easy way to run this project use **Virtual Box** to create virtual machine base Linux and **Vagrant** to configure and share computer host files to VM host files.
+
+What you need to do:
+
+1. Install the [Virtual box](https://www.virtualbox.org/wiki/Downloads)
+1. Install the [Vagrant ](https://www.vagrantup.com/downloads.html)
+1. Clone the repository [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm)
+1. From your terminal, inside the vagrant subdirectory, run the `vagrant up` command. This can take a while (many minutes) depending on how fast your Internet connection is.
+1. When vagrant up finishes executing, you will have me shell prompt back. At this point, you can run `ssh vagrant` to log me on your newly installed Linux
+
+
 # Usage
    
 1. Download [news database sample](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
