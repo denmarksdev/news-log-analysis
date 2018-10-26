@@ -6,7 +6,7 @@ Create a reporter tool to **Analysis database news**, answering the following qu
 
 # Requirements
 - [Python 3.7](https://www.python.org/downloads/)
-- [PostgreSQL9.5](https://www.postgresql.org/download/)
+- [PostgreSQL 9.5](https://www.postgresql.org/download/)
 
 # Usage
    
