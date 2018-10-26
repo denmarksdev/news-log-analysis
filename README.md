@@ -21,6 +21,7 @@ CREATE VIEW view_top_article_by_views AS
 	GROUP BY articles.title, articles.id, articles.author 
 	ORDER BY views DESC;```
 ```
+```
 CREATE VIEW view_errors_request_by_day_more_than_1percent AS
 	SELECT to_char(date_error,'FMMon FMDD, YYYY'), round(percent_error,2) || '%'  AS percent FROM ( 
 		SELECT *, ((error * 100)::numeric / access ) as percent_error FROM 
