@@ -10,7 +10,7 @@ Create a reporter tool to **Analysis database news**, answering the following qu
 
 # Virtual Machine the easy way
 
-he easy way to run this project use **Virtual Box** to create virtual machine base Linux and **Vagrant** to configure and share computer host files to VM host files.
+The easy way to run this project use **Virtual Box** to create virtual machine base Linux and **Vagrant** to configure and share computer host files to VM host files.
 
 What you need to do:
 
