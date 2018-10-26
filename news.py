@@ -40,12 +40,10 @@ def break_line_print():
 def main():
     break_line_print()
     show_top_articles()
-
-    break_line_print()
+    
     break_line_print()
     show_top_authors()
 
-    break_line_print()
     break_line_print()
     show_errors_on_request()
     break_line_print()
