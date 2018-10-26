@@ -39,6 +39,6 @@ CREATE VIEW view_errors_request_by_day_more_than_1percent AS
 ```
 4. Run the command `$ python news.py` to start reporter tool!     
 
-# Screenshot
+# Screenshoot
 
 ![](https://github.com/denmarksdev/news-log-analysis/blob/master/screenshot.JPG?raw=true "Optional Reporter tool")
