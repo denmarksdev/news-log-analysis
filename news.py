@@ -6,7 +6,11 @@ import newsdb
 def show_top_articles():
     print("searching for articles...\n")
     break_line_print()
+<<<<<<< HEAD
     results = newsdb.get_top3_articles_by_num_views()
+=======
+    results = newsdb.get_top_3_articles_by_num_views()
+>>>>>>> 5e2173e6b781c1f0bc82f21d1f96d080a75baa32
     print("***Top articles***")
     show_results("articles", results)
 
