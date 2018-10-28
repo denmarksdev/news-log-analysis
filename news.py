@@ -58,4 +58,7 @@ def main():
     break_line_print()
 
 
-main()
+if __name__ == '__main__':
+        main()
+
+
