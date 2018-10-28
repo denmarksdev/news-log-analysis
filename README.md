@@ -26,7 +26,10 @@ What you need to do:
 1. Download [news database sample](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
 2. Run the command  `$ psql -d news -f newsdata.sql` to create database news 
 3. Run the command  `$ psql -d news -f create_views.sql` to create views on database news
-4. Create follow view in database news:
+4. Run the command `$ python news.py` to start reporter tool!     
+
+# Views on database news
+
 ```
 CREATE VIEW view_top_article_by_views AS
 	SELECT articles.title, articles.author, COUNT(log.*) AS views
@@ -51,7 +54,7 @@ CREATE VIEW view_errors_request_by_day_more_than_1percent AS
 	) AS result
 	WHERE percent_error > 1;
 ```
-5. Run the command `$ python news.py` to start reporter tool!     
+
 
 # Screenshoot
 
