@@ -24,8 +24,8 @@ What you need to do:
 # Usage
    
 1. Download [news database sample](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
-2. Run the command  `$ psql -d news -f newsdata.sql` to create on database news 
-3. Run the command  `$ psql -d news -f create_views.sql` to create on database news
+2. Run the command  `$ psql -d news -f newsdata.sql` to create database news 
+3. Run the command  `$ psql -d news -f create_views.sql` to create views on database news
 4. Create follow view in database news:
 ```
 CREATE VIEW  view_top_authors_by_views_article AS
