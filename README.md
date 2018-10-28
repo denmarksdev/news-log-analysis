@@ -58,4 +58,4 @@ CREATE VIEW view_errors_request_by_day_more_than_1percent AS
 
 # Screenshoot
 
-![](https://github.com/denmarksdev/news-log-analysis/blob/master/screenshot.JPG?raw=true "Optional Reporter tool")
+![](https://github.com/denmarksdev/news-log-analysis/blob/master/screenshot.JPG?raw=true "Reporter tool")
