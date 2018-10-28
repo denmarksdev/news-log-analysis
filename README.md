@@ -28,12 +28,12 @@ What you need to do:
 3. Run the command  `$ psql -d news -f create_views.sql` to create views on database news
 4. Create follow view in database news:
 ```
-CREATE VIEW  view_top_authors_by_views_article AS
-	SELECT authors.name, COUNT(articles.id) AS views 
-	FROM articles, log, authors
-	WHERE log.path =  ('/article/' || articles.slug) AND authors.id = articles.author
-	GROUP BY authors.name, authors.name
-	ORDER BY views DESC 
+CREATE VIEW view_top_article_by_views AS
+	SELECT articles.title, articles.author, COUNT(log.*) AS views
+	FROM articles, log
+	WHERE  log.path  CONCAT('/article/',articles.slug)
+	GROUP BY articles.title, articles.id, articles.author 
+	ORDER BY views DESC;
 ```
 ```
 CREATE VIEW view_errors_request_by_day_more_than_1percent AS
